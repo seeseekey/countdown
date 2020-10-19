@@ -1,0 +1,13 @@
+body{
+  background-image: url("background.jpg");
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.clock {
+	padding-top: 20%;
+    display: inline-block;
+    width: auto;
+}	

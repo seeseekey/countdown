@@ -1,0 +1,32 @@
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Countdown</title>
+	
+	<link rel="stylesheet" href="libs/flipclock.css">
+	<link rel="stylesheet" href="style.css">
+	
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/flipclock.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="clock"></div>
+	</div>
+	
+	<script type="text/javascript">
+		var date = new Date(2042, 9, 18, 12);
+		
+		var now = new Date();
+		var diff = (date.getTime()/1000) - (now.getTime()/1000);
+	
+		var clock = $('.clock').FlipClock(diff,{
+			clockFace: 'DailyCounter',
+			countdown: true
+		});
+	</script>
+</body>
+
+</html>
